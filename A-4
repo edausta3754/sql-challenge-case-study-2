@@ -1,0 +1,5 @@
+select customer_id, count(t1.order_id) as 'Pizza sayısı'  from customer_orders t1 join runner_orders t2
+on 
+t1.order_id=t2.order_id
+where cancellation=''
+group by customer_id
