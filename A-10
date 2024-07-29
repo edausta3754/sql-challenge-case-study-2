@@ -1,0 +1,4 @@
+select datename(weekday,order_time) as 'Gün', count(order_id) as 'Toplam Sipariş Sayısı' 
+from customer_orders
+group by datename(weekday,order_time)
+order by 'Gün'
