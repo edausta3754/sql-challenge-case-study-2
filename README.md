@@ -1,4 +1,8 @@
 # sql-challenge-case-study-2
+
+![2](https://github.com/user-attachments/assets/7bca3f6d-3dac-4035-86a1-f48c58d0801b)
+
+
 Case Study #2 - Pizza Runner
 Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
 
