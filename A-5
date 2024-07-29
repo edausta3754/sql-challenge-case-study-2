@@ -1,0 +1,5 @@
+select t1.pizza_id,pizza_name,count(order_id) as 'Sipariş sayısı' 
+from customer_orders t1 join pizza_names t2
+on 
+t1.pizza_id=t2.pizza_id
+group by t1.pizza_id, t2.pizza_name
