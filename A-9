@@ -1,0 +1,4 @@
+select datepart(hour,order_time) as 'Saat', count(order_id) as 'Toplam Sipariş Sayısı' 
+from customer_orders
+group by datepart(hour,order_time) 
+order by 'Saat'
