@@ -1,0 +1,1 @@
+select count(order_id) as 'Toplam Sipariş Sayısı' from customer_orders
