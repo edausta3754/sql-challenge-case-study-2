@@ -1,0 +1,1 @@
+select customer_id from customer_orders group by customer_id
