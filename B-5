@@ -1,0 +1,5 @@
+select max(duration) as 'En Uzun',
+min(duration) as 'En Kısa',
+max( cast(substring(duration,1,2) as int))-min(cast(substring(duration,1,2) as int)) as 'Fark'
+from runner_orders 
+where duration!=''
