@@ -1,5 +1,5 @@
-select runner_id,
-cast(substring(distance,1,2)*1000 as int)/cast(substring(duration,1,2)*60 as int) 
-from runner_orders 
+select order_id,runner_id,
+cast(substring(distance,1,2)*1000 as int)/cast(substring(duration,1,2)*60 as int) as 'Hız'
+ from runner_orders 
 where duration!=''
 order by runner_id 
