@@ -1,1 +1,5 @@
-select count(order_id) as 'Toplam Sipariş Sayısı' from customer_orders
+select dateadd(week,datediff(week,'2021-01-01', registration_date) ,'2021-01-01') as 'hafta başlangıcı',
+count(runner_id) as 'kayıt sayısı'
+from runners
+group by dateadd(week,datediff(week,'2021-01-01', registration_date),'2021-01-01')
+
