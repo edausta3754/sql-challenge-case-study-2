@@ -1,1 +1,7 @@
-select customer_id from customer_orders group by customer_id
+select t1.order_id,
+t2.customer_id,
+datediff(minute, t2.order_time, t1.pickup_time) as 'dakika' 
+from runner_orders t1 join customer_orders t2 
+on 
+t1.order_id=t2.order_id where duration!=''
+group by t1.order_id, t1.pickup_time, t2.order_time,t2.customer_id
